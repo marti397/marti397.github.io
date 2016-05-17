@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>AIG Survey Tool</title>
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aigSurveyTool.css">
 </head>
 <body>
     <h1>AIG Report Builder</h1>
@@ -12,32 +12,50 @@
     <h2>Commercial Cooking Equipment</h2>
     <form action="MAILTO:chris.m.servin@gmail.com" method="post" enctype="text/plain" id="cookingForm">
         <h3>Description</h3>
-        <div>
+        <div id="description">
             <p>Location</p>
             <input type="text" name="location" id="kitchenLocation">
             <p>Size of the cooking area</p>
-            <input type="text" name="cookingArea">
+            <input type="text" name="cookingArea" id="cookingArea">
             <p>Size of the kitchen</p>
-            <input type="text" name="kitchenArea">
-            
-            <input type="text" name="outCookingText" id="outputCookingText">
+            <input type="text" name="kitchenArea" id="kitchenArea">
         </div>
-        <input id="wccb" type="checkbox" name="cooking" value="wetChemical">Wet Chemical per ANSI/UL300 NFPA 96, 10.2.3<br>
-        <a href="http://www.vrfa.org/pdf/UL%20300%20Commercial%20Cooking%20Systems.pdf" target="_blank">UL 300 requirements</a>
-Name:<br>
-<input type="text" name="name" value="your name"><br>
-E-mail:<br>
-<input type="text" name="mail" value="your email"><br>
-Comment:<br>
-<input type="text" name="comment" value="your comment" size="50"><br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
-</form>
-
-    
-    
-    
-    
+        <div id="cookingEquipment">
+            <div><input id="grills" type="checkbox" name="cookingEqpmt" value="grills">Grills</div>
+            <div><input id="ovens" type="checkbox" name="cookingEqpmt" value="ovens">Ovens</div>
+            <div><input id="deepFryers" type="checkbox" name="cookingEqpmt" value="deep fryers">Deep Fryers</div>
+            <div><input id="stoves" type="checkbox" name="cookingEqpmt" value="stoves">Stoves</div>
+            <div><input id="hoods" type="checkbox" name="cookingEqpmt" value="hoods">Hoods</div>
+            <div><input id="naturalGasCooking" type="checkbox" name="cookingEqpmt" value="gas fired.">Gas fired</div>
+            <div><input id="electricCooking" type="checkbox" name="cookingEqpmt" value="electric">Electric</div>
+        </div>
+        <div id="cookingProtection">
+            <h3>Protection</h3>
+            <input id="wetChemicalKitchen" type="checkbox" name="cooking" value="wetChemical">Wet Chemical System per ANSI/UL300 NFPA 96, 10.2.3<br>
+            <a href="http://www.vrfa.org/pdf/UL%20300%20Commercial%20Cooking%20Systems.pdf" target="_blank">UL 300 requirements</a>
+            <ul>
+                <li>Nozzles located in the hood and duct</li>
+                <li>Nozzles located over each cooking appliance</li>
+                <li>Manual pull station</li>
+                <li>Automatic fuel shut-offs for gas and electric</li>
+                <li>UL 300-compliant wet chemical extinguishing system</li>
+                <li>Wet chemical extinguishing system serviced semi-annually by an authorized licensed service company</li>
+                <li>Hood and duct maintenance and cleaning semi-annually by an authorized licensed service company</li>
+                <li>Baffle filter cleaning recommended weekly</li>
+            </ul>
+        </div>
+        <div id="cookingComments">
+            <textarea form="cookingForm" id="cookingCommentsTextbox" name="cookingTextComments"></textarea>
+        </div>
+        
+        
+        
+        
+        <input type="text" name="outCookingText" id="outputCookingText">
+        <input type="button" value="Cooking Completed" id="cookingCompleted">
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>    
     
     <script src="js/d3.min.js"></script>
     <script src="js/jquery.min.js"></script>
