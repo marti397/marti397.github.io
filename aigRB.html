@@ -2,15 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main</title>
+    <title>AIG Survey Tool</title>
     <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
     <!--<link rel="stylesheet" href="css/style.css">-->
 </head>
 <body>
     <h1>AIG Report Builder</h1>
     <!--<a href="toTake.html"><h1>To Take</h1></a>-->
-    
-    <form action="MAILTO:chris.m.servin@gmail.com" method="post" enctype="text/plain">
+    <h2>Commercial Cooking Equipment</h2>
+    <form action="MAILTO:chris.m.servin@gmail.com" method="post" enctype="text/plain" id="cookingForm">
+        <h3>Description</h3>
+        <div>
+            <p>Location</p>
+            <input type="text" name="location" id="kitchenLocation">
+            <p>Size of the cooking area</p>
+            <input type="text" name="cookingArea">
+            <p>Size of the kitchen</p>
+            <input type="text" name="kitchenArea">
+            
+            <input type="text" name="outCookingText" id="outputCookingText">
+        </div>
+        <input id="wccb" type="checkbox" name="cooking" value="wetChemical">Wet Chemical per ANSI/UL300 NFPA 96, 10.2.3<br>
+        <a href="http://www.vrfa.org/pdf/UL%20300%20Commercial%20Cooking%20Systems.pdf" target="_blank">UL 300 requirements</a>
 Name:<br>
 <input type="text" name="name" value="your name"><br>
 E-mail:<br>
