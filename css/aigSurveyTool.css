@@ -1,11 +1,15 @@
+body{
+    margin-left: 300px;
+}
+
 #cookingCommentsTextbox{
     height: 200px;
     width: 500px;
 }
 input[type='checkbox'] {
     -webkit-appearance:none;
-    width:30px;
-    height:30px;
+    width:70px;
+    height:70px;
     background:white;
     border-radius:5px;
     border:2px solid #555;
