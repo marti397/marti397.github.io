@@ -1,5 +1,8 @@
 body{
     margin-left: 300px;
+    padding-left: 200px;
+    padding-bottom: 300px;
+    margin-bottom: 100px;
 }
 
 #cookingCommentsTextbox{
