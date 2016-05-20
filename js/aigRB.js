@@ -8,13 +8,11 @@ var kitchenLocation = "",
     stoves = "",
     hoods = ""
     electricEqpmt = ""
-    gasFiredEqpmt = "";
-
+    gasFiredEqpmt = ""
+    cookingDataCollection = "";
 $("#cookingCompleted").on('click', function() {
-    
     getCookingValues();
-    
-    
+
     outCookingText = "The site is provided with a full size commercial kitchen. " +
     "It is located " + kitchenLocation +
     ". Size of the cooking area is about " + cookingArea + " sq. ft. " +
@@ -24,6 +22,32 @@ $("#cookingCompleted").on('click', function() {
 
     $('#outputCookingText').val(outCookingText);
     console.log(outCookingText)
+    
+    
+    if($('#wetChemicalKitchen').is(':checked')){
+        cookingDataCollection = cookingDataCollection + "Wet Chemical System per ANSI/UL300 NFPA 96, 10.2.3, "
+    }
+    if($('#coverOilHazard').is(':checked')){
+        cookingDataCollection = cookingDataCollection + "Protection covers all oil hazards, "
+    }
+    if($('#cookingFuelShutoff').is(':checked')){
+        cookingDataCollection = cookingDataCollection + "System interlocked to shutoff fuel supply, "
+    }
+    if($('#hoodVent').is(':checked')){
+        cookingDataCollection = cookingDataCollection + "Adequate hood ventilation, "
+    }
+    cookingDataCollection = cookingDataCollection + $('#CookingCanister').val() + ", ";
+    cookingDataCollection = cookingDataCollection + $('#sizeCookingCanister').val() + ", ";
+    if($('#kitchenSprinklers').is(':checked')){
+        cookingDataCollection = cookingDataCollection + "Wet pipe sprinklers at the ceiling, "
+    }
+    if($('#kratedExtinguisher').is(':checked')){
+        cookingDataCollection = cookingDataCollection + "Portable wet chemical extinguishers (K-rated) are also provided, "
+    }
+    cookingDataCollection = cookingDataCollection + "the hood is cleaned " + $('input[name=hoodCleaning]:checked').val() + ", ";
+    cookingDataCollection = cookingDataCollection + $('#cookingCommentsTextbox').val() + ", ";  
+    $('#dataCommercialCooking').val(cookingDataCollection);
+    console.log(cookingDataCollection)
 });
 
 function getCookingValues(){
@@ -53,5 +77,10 @@ function getCookingValues(){
     }else{gasFiredEqpmt = ". Natural gas is not used in the kitchen."}
     return;
 }
+
+$(function() {
+    $( "#tabs" ).tabs();
+});
+
 
 
