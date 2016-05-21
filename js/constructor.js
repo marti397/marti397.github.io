@@ -2,6 +2,30 @@ var whatIsMyText = ""
 var tb = "text"
 var cb = "checkbox"
 
+//hydraulic equipment hazard
+var allHydraulic = [
+    {text:"This is a test",input:cb},
+    {text:"Equipment Description, what is it used for?",input:tb},
+    {text:"Size and location of the room",input:tb},
+    {text:"Construction and fire resistance, at least 1 hour, check fire doors",input:tb},
+    {text:"Type of fluid and propeties flash point - petroeum based, water based, less hazardous",input:tb},
+    {text:"Operating pressure and temperature of the fluid",input:tb},
+    {text:"Containment or Drainage",input:cb},
+    {text:"Reservoir Size",input:tb},
+    {text:"Fire protection - if at least one manual or automatic interlock use 0.18/2500 at least If no interlocks use .28/3000",input:tb},
+    {text:"Low reservoir level interlocks",input:cb},
+    {text:"Flame or heat detection above pumps, filters and reservoir",input:cb},
+    {text:"Interlocked to sprinkler system",input:cb},
+    {text:"Manual e-stop at least 40ft from equipment",input:cb},
+    {text:"At least one manual or automatic interlock",input:cb},
+    {text:"Additional Comments",input:tb},
+    {text:"Final Output",input:tb},
+];
+createNewForm("hydraulicEquipmentForm","tabs-3");
+addButtons("hydeqCompleted","hydraulicEquipmentForm");
+looperAllElements("hydeq","hydraulicEquipmentForm",allHydraulic, "tabs-3");
+
+
 //storage Hazard
 var allStorage =[
     {text:"Size of the area sq ft", input:tb},
@@ -76,4 +100,23 @@ function checkboxInput(indexValue,textValue,hazardtype, elementToAppend){
     document.getElementById(elementToAppend).appendChild(createbr)
     document.getElementById(elementToAppend).appendChild(creatediv)
     return;
+}
+
+//add completed, reset and submit buttons for each from
+function addButtons(btnID,formID){
+    var newCompleteBtn = document.createElement("input");
+    var newSubmitBtn = document.createElement("input");
+    var newResetBtn = document.createElement("input");
+    newCompleteBtn.setAttribute("type", "button");
+    newCompleteBtn.setAttribute("value", "Preview");
+    newCompleteBtn.setAttribute("id", btnID);
+    newSubmitBtn.setAttribute("type","submit");
+    newSubmitBtn.setAttribute("value", "Send");
+    newResetBtn.setAttribute("type","reset");
+    newResetBtn.setAttribute("value", "Reset");
+    $("#" + formID).append(newCompleteBtn);
+    //document.getElementById(formID).appendChild(newCompleteBtn)
+    document.getElementById(formID).appendChild(newSubmitBtn)
+    document.getElementById(formID).appendChild(newResetBtn)
+    
 }
