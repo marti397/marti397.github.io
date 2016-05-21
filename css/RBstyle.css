@@ -1,6 +1,4 @@
 body{
-    /*padding-left: 200px;
-    padding-bottom: 300px;*/
     margin-left: auto;
     margin-right: auto;
     width:1000px;
@@ -10,11 +8,14 @@ body{
 }
 h1{
     text-align: center;
-}
-
-#cookingCommentsTextbox{
-    height: 150px;
-    width: 400px;
+    letter-spacing: 2px;
+    color: deepskyblue;
+    font-weight: 100;
+    background: white;
+    border: 2px solid deepskyblue;
+    margin: 20px 300px 20px 300px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 input[type='checkbox'] {
     -webkit-appearance:none;
@@ -25,13 +26,21 @@ input[type='checkbox'] {
     border:2px solid #555;
 }
 input[type='checkbox']:checked {
-    background: #ff4d4d;
+    background: deepskyblue;
+}
+textarea{
+    height: 150px;
+    width: 400px;
+}
+#cookingCommentsTextbox{
+    height: 150px;
+    width: 400px;
 }
 #dataCommercialCooking, #outputCookingText{
     height: 150px;
     width: 400px;
 }
-#tabs-1, #tabs-2{
+#tabs-1, #tabs-2, #tabs-3, #tabs-4{
     font-size: 20px;
 }
 input[type='radio'] {

@@ -1,46 +1,26 @@
 var whatIsMyText = ""
-var tb = "text"
-var cb = "checkbox"
 
-//hydraulic equipment hazard
-var allHydraulic = [
-    {text:"This is a test",input:cb},
-    {text:"Equipment Description, what is it used for?",input:tb},
-    {text:"Size and location of the room",input:tb},
-    {text:"Construction and fire resistance, at least 1 hour, check fire doors",input:tb},
-    {text:"Type of fluid and propeties flash point - petroeum based, water based, less hazardous",input:tb},
-    {text:"Operating pressure and temperature of the fluid",input:tb},
-    {text:"Containment or Drainage",input:cb},
-    {text:"Reservoir Size",input:tb},
-    {text:"Fire protection - if at least one manual or automatic interlock use 0.18/2500 at least If no interlocks use .28/3000",input:tb},
-    {text:"Low reservoir level interlocks",input:cb},
-    {text:"Flame or heat detection above pumps, filters and reservoir",input:cb},
-    {text:"Interlocked to sprinkler system",input:cb},
-    {text:"Manual e-stop at least 40ft from equipment",input:cb},
-    {text:"At least one manual or automatic interlock",input:cb},
-    {text:"Additional Comments",input:tb},
-    {text:"Final Output",input:tb},
-];
-createNewForm("hydraulicEquipmentForm","tabs-3");
-addButtons("hydeqCompleted","hydraulicEquipmentForm");
-looperAllElements("hydeq","hydraulicEquipmentForm",allHydraulic, "tabs-3");
+//variables for hydraulic equipment
+var formHydraulicEquipment = "hydraulicEquipmentForm"
+var hydraulicHazardName = "hydeq"
+createNewForm(formHydraulicEquipment,"tabs-3");
+looperAllElements(hydraulicHazardName,formHydraulicEquipment,allHydraulic);
+addButtons(hydraulicHazardName,formHydraulicEquipment);
 
+//variables for storage hazards
+var formStorage = "storageForm";
+var storageHazardName = "storage";
+createNewForm(formStorage,"tabs-4");
+looperAllElements(storageHazardName,formStorage,allStorage)
+addButtons(storageHazardName,formStorage);
 
-//storage Hazard
-var allStorage =[
-    {text:"Size of the area sq ft", input:tb},
-    {text:"Ceiling height and slope peak, eave and distance. should be less than 16%", input:tb},
-    {text:"construction and fire resistance of the area", input:tb},
-    {text:"Metal Halide? lamps", input:cb},
-    {text:"Lamps fixtures with containment barriers?", input:cb},
-    {text:"Turn off at least once a week for a minimum of 15 min", input:cb},
-    {text:"Commodity?", input:tb},
-    {text:"Encapsulated?",input:cb},
-    {text:"Open top containers?",input:cb}
-];
-//create all storage hazard elements
-createNewForm("storageForm","tabs-4")
-looperAllElements("storage","storageForm",allStorage, "tabs-4")
+//variables for emergency generator hazards
+var formGenerator = "generatorForm";
+var emgenHazardName = "emgen";
+createNewForm(formGenerator,"tabs-2");
+looperAllElements(emgenHazardName,formGenerator,allGenerator)
+addButtons(emgenHazardName,formGenerator);
+
 
 //function to create new form
 function createNewForm(formID, elementToAppend){
@@ -53,20 +33,20 @@ function createNewForm(formID, elementToAppend){
 }
 
 //function to create all elements
-function looperAllElements(typeOfHazard,nameOfTheForm,theArray, elementToAppend){
+function looperAllElements(typeOfHazard,nameOfTheForm,theArray){
     for (i=0; i < theArray.length; i++){
         whatIsMyText = theArray[i].text
         if (theArray[i].input === "checkbox"){
-            checkboxInput(i,whatIsMyText,typeOfHazard, elementToAppend);
+            checkboxInput(i,whatIsMyText,typeOfHazard, nameOfTheForm);
         }else{
-            textInput(i,whatIsMyText,typeOfHazard,nameOfTheForm,elementToAppend);
+            textInput(i,whatIsMyText,typeOfHazard,nameOfTheForm);
         }
     }
     return;
 }
 
 //function to create single text Inputs
-function textInput(indexValue,textValue,hazardtype,formName, elementToAppend){
+function textInput(indexValue,textValue,hazardtype,formName){
     var createbr = document.createElement("br");
     var creatediv = document.createElement("div");
     var createInputTextArea = document.createElement("textarea");
@@ -79,8 +59,8 @@ function textInput(indexValue,textValue,hazardtype,formName, elementToAppend){
     //creatediv.appendChild(createbr);
     creatediv.appendChild(document.createElement("br"));
     creatediv.appendChild(createInputTextArea);
-    document.getElementById(elementToAppend).appendChild(createbr);
-    document.getElementById(elementToAppend).appendChild(creatediv);
+    document.getElementById(formName).appendChild(createbr);
+    document.getElementById(formName).appendChild(creatediv);
     return;
 }
 
