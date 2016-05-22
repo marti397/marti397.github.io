@@ -80,4 +80,7 @@ var allGenerator = [
     {text:"LEL detection",input:cb},
     {text:"Additional Comments like mainteance weekly excercised, full load test Generator Alarms, tank alarms, smoke detectors in the room etc",input:tb},
     {text:"Final Output",input:tb}
+];
+var allFlammableLiquids = [
+    
 ]
