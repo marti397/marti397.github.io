@@ -222,6 +222,20 @@ var allBatteryRoom = [
 ];
 var allElectrical = [
     {text:"Maintain 3’ clear space around electrical equipment (greater clearance may be required for voltages over 600V)",input:tb},
+    {text:"Annual Infrared inspections of critical equipment",input:cb},
+    {text:"Visually inspection of the distribution switchgear annually",input:cb},
+    {text:"LV MV & HV Air Circuit Breakers(>72kV) - Visually inspect and clean annually",input:cb},
+    {text:"LV MV & HV Air Circuit Breakers(>72kV) - Trip test annually",input:cb},
+    {text:"LV MV & HV Air Circuit Breakers(>72kV) - Contact resistance test every 3 years",input:cb},
+    {text:"Motor Control Centers - Visually inspect/clean enclosure annually",input:cb},
+    {text:"Motor Control Centers - Visually inspect wiring and insulators annually",input:cb},
+    {text:"Motor Control Centers - Cycle annually",input:cb},
+    {text:"Oil Filled Transformers - Conduct oil gas analysis Annually",input:cb},
+    {text:"Oil Filled Transformers - Insulation resistance test every 3-5 years",input:cb},
+    {text:"Oil Filled Transformers - Insulation power factor test every 3 to 5 years",input:cb},
+    {text:"Oil Filled Transformers - Turns ratio test every 3-5 years",input:cb},
+    {text:"Emergency Generator Load Testing  - Test monthly (min 30% of rating)",input:cb},
+    {text:"Emergency Power Transfer Switches - Test monthly",input:cb},
     {text:"Additional Comments",input:tb},
     {text:"Final Output",input:tb}
 ];
@@ -322,6 +336,28 @@ var allTesting = [
     {text:"The cylinders for the the clean agent system are inspected semiannually for agent quantity and pressure",input:cb},
     {text:"Initianing devices, alarm notification devices, and other fire alarms are tested annually",input:cb},
     {text:"Transmission of signals to off-premises location is tested annually",input:cb},
+    {text:"Additional Comments",input:tb},
+    {text:"Final Output",input:tb}
+]
+var dustCollector = [
+    {text:"Description of Process What is being collected, etc - bag house, dust collector, cyclone",input:tb},
+    {text:"Size and Location of Dust collector (dimensions, area)",input:tb},
+    {text:"Construction and fire resistance rating of room",input:tb},
+    {text:"Dust hazard analysis? for combustibility and how explosive it is, kst?",input:tb},
+    {text:"Bonde and grounded for static electricity",input:tb},
+    {text:"Sprinkler protection for the area",input:tb},
+    {text:"Sprinkler protection for the dust collector",input:tb},
+    {text:"Explosion isolation valves/dampers",input:tb},
+    {text:"Explosion relief/venting panels",input:tb},
+    {text:"Explosion suppression",input:tb},
+    {text:"Spark arrestor",input:tb},
+    {text:"Interlocks to shut down the fans or close the dampers",input:tb},
+    {text:"Additional Comments",input:tb},
+    {text:"Final Output",input:tb}
+]
+var combustionControlandAmmonia =[
+    {text:"Flame failure detection, Pressure switch limits and interlocks, SSOV’s test annually",input:cb},
+    {text:"Ammonia Refrigeration Vapor Detection Systems, Ventilation Systems tested annually",input:cb},
     {text:"Additional Comments",input:tb},
     {text:"Final Output",input:tb}
 ]

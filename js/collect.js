@@ -54,6 +54,12 @@ $( ":button" ).on('click', function(){
         case "firetest":
             var dataUsed = allTesting
             break;
+        case "dust":
+            var dataUsed = dustCollector
+            break;
+        case "combustion":
+            var dataUsed = combustionControlandAmmonia
+            break;
     }
     getAllData(dataUsed,selectedHazard,dataCollection);
 })

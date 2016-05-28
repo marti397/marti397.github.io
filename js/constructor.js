@@ -119,6 +119,20 @@ createNewForm(formFireTesting,"tabs-18");
 looperAllElements(fireTestHazardName,formFireTesting,allTesting)
 addButtons(fireTestHazardName,formFireTesting);
 
+//Dust Collector - dust
+var formDust = "dustForm";
+var dustHazardName = "dust";
+createNewForm(formDust,"tabs-19");
+looperAllElements(dustHazardName,formDust,dustCollector)
+addButtons(dustHazardName,formDust);
+
+//Combustion controls and ammonia testing - combustion
+var formCombustion = "combustionForm";
+var combustionHazardName = "combustion";
+createNewForm(formCombustion,"tabs-20");
+looperAllElements(combustionHazardName,formCombustion,combustionControlandAmmonia)
+addButtons(combustionHazardName,formCombustion);
+
 
 //function to create new form
 function createNewForm(formID, elementToAppend){
