@@ -1,21 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Main</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <a href="toTake.html"><h1>To Take</h1></a>
-    <a href="aigRB.html"><h1>AIG survey tool - hazards</h1></a>
-    <h1>This is a test</h1>
-    <a href="aigRB.html"><h1>AIG survey tool - hazards</h1></a>
-    <a href="aigRB.html"><h1>AIG survey tool - hazards</h1></a>
-    <a href="aigRB.html"><h1>AIG survey tool - hazards</h1></a>
-    
-    <script src="js/d3.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CMS</title>
+        <meta name="description" content="Christopher Martinez Servin Website">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>Christopher Martinez Servin</h1>
+        <div id="introInfo">
+            <div>Loss Prevention Risk Engineer</div>
+            <div><a href="https://www.aig.com/business/insurance/property/engineering-and-loss-control-services" target="_blank">American International Group (AIG)</a></div>
+        </div>
+        <div id="contactInfo">
+            <div>Contact Information</div>
+            <div>cmarti397@alumni.harvard.edu</div>
+        </div>
+        
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+            <button class="tablinks" onclick="openTab(event, 'Experience')">Experience</button>
+            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+        </div>
+        
+        <div id="Education" class="tabcontent">
+            <div class="myList">
+                <img src="images/harvardLogo.jpg" alt="Harvard Logo">
+                <div>Harvard University, Cambridge, MA</div>
+                <div><a href="images/HarvardDegree.JPG" target="_blank">Master of Liberal Arts, Field: Information Management Systems</a></div>
+                <div><a href="images/ALMDeansList.jpg" target="_blank">Dean's List Academic Achievement Award</a></div>
+                <div>May 2017</div>
+            </div>
+            <div class="myList">
+                <img src="images/HESLogo.png" alt="HES Logo">
+                <div>Harvard Extension School, Cambridge, MA</div>
+                <div><a href="images/certificateDataScience.jpg" target="_blank">Professional Graduate Certificate in Data Science</a></div>
+                <div>May 2017</div>
+            </div>        
+            <div class="myList">
+                <img src="images/purdueLogo.png" alt="Purdue Logo">
+                <div>Purdue University, West Lafayette, IN</div>
+                <div><a href="images/PurdueDegree.jpg" target="_blank">Bachelor of Science in Industrial Engineering, Concentration in Software Engineering</a></div>
+                <div>May 2014</div>
+            </div>
+            <div class="myList">
+                <img src="images/tecLogo.png" alt="Tec Logo">
+                <div>Tecnológico de Monterrey, Monterrey, Mexico</div>
+                <div><a href="images/HighSchool_Diploma.jpg" target="_blank">High School Diploma</a></div>
+                <div>May 2010</div>
+            </div>
+        </div>
+        <div id="Experience" class="tabcontent">
+            <h3>Experience</h3>
+            <p>Paris is the capital of France.</p> 
+        </div>
+        <div id="Projects" class="tabcontent">
+            <div id="leftPanelProjects">
+                <div class="myList">
+                    <div class="projectBox">WB1</div>
+                    <div><a href="https://collareweb.000webhostapp.com/collare/index.php" target="_blank">Simple online store website</a></div>
+                </div>
+            </div>
+            <div id="rightPanelProjects">
+                <div class="myList">
+                    <div>VZ1</div>
+                    <div>Data visualization, US Presidents</div>
+                </div>
+                <div class="myList">
+                    <div><a href="https://collareweb.000webhostapp.com/midterm_template/index.html" target="_blank">VZ2 - Malaria by the numbers</a><br>D3.js, choropleth map,</div>
+                </div>
+            </div>
+            <div class="myList">
+                <div><a href="other/main.html">Other</a></div>
+            </div>
+            <div class="myList">
+            </div>
+        </div>
+    </body>
 </html>
