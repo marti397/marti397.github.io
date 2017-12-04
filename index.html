@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>CMS</title>
         <meta name="description" content="Christopher Martinez Servin Website">
@@ -12,7 +13,7 @@
         <h1>Christopher Martinez Servin</h1>
         <div id="introInfo">
             <div>Loss Prevention Risk Engineer</div>
-            <div><a href="https://www.aig.com/business/insurance/property/engineering-and-loss-control-services" target="_blank">American International Group (AIG)</a></div>
+            <div>American International Group</div>
         </div>
         <div id="contactInfo">
             <div>Contact Information</div>
@@ -29,33 +30,86 @@
             <div class="myList">
                 <img src="images/harvardLogo.jpg" alt="Harvard Logo">
                 <div>Harvard University, Cambridge, MA</div>
-                <div><a href="images/HarvardDegree.JPG" target="_blank">Master of Liberal Arts, Field: Information Management Systems</a></div>
-                <div><a href="images/ALMDeansList.jpg" target="_blank">Dean's List Academic Achievement Award</a></div>
+                <div>Master of Liberal Arts, Field: Information Management Systems - <a href="images/HarvardDegree.JPG" target="_blank">A.L.M.</a></div>
+                <div>Dean's List Academic Achievement Award - <a href="images/ALMDeansList.jpg" target="_blank">Dean's List</a></div>
                 <div>May 2017</div>
             </div>
             <div class="myList">
                 <img src="images/HESLogo.png" alt="HES Logo">
-                <div>Harvard Extension School, Cambridge, MA</div>
-                <div><a href="images/certificateDataScience.jpg" target="_blank">Professional Graduate Certificate in Data Science</a></div>
+                <div>Harvard University Extension School, Cambridge, MA</div>
+                <div>Professional Graduate Certificate in Data Science - <a href="images/certificateDataScience.jpg" target="_blank">P.G.C.</a></div>
                 <div>May 2017</div>
             </div>        
             <div class="myList">
                 <img src="images/purdueLogo.png" alt="Purdue Logo">
                 <div>Purdue University, West Lafayette, IN</div>
-                <div><a href="images/PurdueDegree.jpg" target="_blank">Bachelor of Science in Industrial Engineering, Concentration in Software Engineering</a></div>
+                <div>Bachelor of Science in Industrial Engineering, Concentration in Software Engineering - <a href="images/PurdueDegree.jpg" target="_blank">B.Sc.</a></div>
                 <div>May 2014</div>
             </div>
             <div class="myList">
                 <img src="images/tecLogo.png" alt="Tec Logo">
-                <div>Tecnológico de Monterrey, Monterrey, Mexico</div>
-                <div><a href="images/HighSchool_Diploma.jpg" target="_blank">High School Diploma</a></div>
+                <div>Monterrey Institute of Technology and Higher Education, Monterrey, Mexico</div>
+                <div>High School Diploma - <a href="images/HighSchool_Diploma.jpg" target="_blank">Diploma</a></div>
                 <div>May 2010</div>
             </div>
         </div>
         <div id="Experience" class="tabcontent">
-            <h3>Experience</h3>
-            <p>Paris is the capital of France.</p> 
+            <div id="accordion">
+                <div class="myList">
+                    <div><a href="https://www.aig.com/business/insurance/property/engineering-and-loss-control-services" target="_blank">Loss Prevention Risk Engineer</a></div>
+                    <div>AIG - Chicago, IL</div>
+                    <div>July 2014 - Present</div>
+                    <button class="accordion-toggle">&#43;</button>
+                    <div class="accordion-content">
+                            As a part of the Client Risk Solutions team, my focus is on property insurance. 
+                            My job consists in identifying risks and assessing the adequacy of our clients’ loss prevention strategies. 
+                            I provide practical recommendations to help reduce the cost of risk and minimize the likelihood of physical 
+                            damage and disruption to operations. This is done through property inspections. 
+                            I work on all kinds of industries and occupancies 
+                            including automotive, healthcare, manufacturing, real estate, retail, utilities, agriculture, food processing, etc. 
+                    </div>
+                </div>
+                <div class="myList">
+                    <div><a href="https://twitter.com/mce_sports?lang=en" target="_blank">Partner</a></div>
+                    <div>MCE Sports - Mexico City, Mexico</div>
+                    <div>Aug 2012 - Jun 2015</div>
+                    <button class="accordion-toggle">&#43;</button>
+                    <div class="accordion-content">Founded a college-recruiting agency that helps Mexican athletes obtain college 
+                        scholarships in the United States</div>
+                </div>
+                <div class="myList">
+                        <div><a href="https://www.housing.purdue.edu/residentiallife/residentassistant.html" target="_blank">Resident Assistant</a></div>
+                        <div>Purdue University - West Lafayette, IN</div>
+                        <div>Jul 2013 – May 2014</div>
+                        <button class="accordion-toggle">&#43;</button>
+                        <div class="accordion-content">Resident Assistant</div>
+                </div>
+                <div class="myList">
+                        <div><a href="https://www.rsa.com/en-us" target="_blank">Anti-Fraud Analyst I</a></div>
+                        <div>RSA, The Security Division of EMC</div>
+                        <div>Jan 2013 – May 2013</div>
+                        <button class="accordion-toggle">&#43;</button>
+                        <div class="accordion-content">Detected and analyzed online threats (phishing, pharming and the like) and 
+                            acted according to AFCC procedures to deploy counter measures, block and shut down the threat.</div>
+                </div>
+                <div class="myList">
+                        <div><a href="http://www.purdue.edu/studentsuccess/academic/si/index.html" target="_blank">Supplemental Instruction Leader</a></div>
+                        <div>Purdue University - West Lafayette, IN</div>
+                        <div>Jan 2013 – May 2013</div>
+                        <button class="accordion-toggle">&#43;</button>
+                        <div class="accordion-content">Planned and led weekly study sessions of the Modern Mechanics course
+                             at Purdue University (PHYS 172) as part of the Student Success Programs.</div>
+                </div>
+                <div class="myList">
+                        <div><a href="https://www.housing.purdue.edu/housing/residences/purduevillage/index.html" target="_blank">Student Clerk</a></div>
+                        <div>Purdue University - West Lafayette, IN</div>
+                        <div>Sept 2011 – Dec 2012</div>
+                        <button class="accordion-toggle">&#43;</button>
+                        <div class="accordion-content">Focused in providing business support at the Community Center 
+                            in the Purdue Village Residence Hall.</div>
+                </div>
         </div>
+    </div>
         <div id="Projects" class="tabcontent">
             <div id="leftPanelProjects">
                 <div class="myList">
