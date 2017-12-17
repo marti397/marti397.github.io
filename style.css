@@ -90,12 +90,7 @@ img {
     width: 50%;
     float: left;
 }
-.projectBox{
-    width: 35px;
-    height: 20px;
-    background-color: aqua;
-    color:white;
-}
+
 .accordion-toggle {cursor: pointer;}
 .accordion-content {display: none;}
 .accordion-content.default {display: block;}
