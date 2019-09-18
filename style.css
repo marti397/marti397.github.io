@@ -1,122 +1,56 @@
-body{
-    width:1000px;
-    font-size: 15px;
-	margin-left:auto;
-    margin-right:auto;
-    font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+.myfont{
+    font-weight: lighter;
 }
-h1{
-	font-weight:lighter;
-	letter-spacing: 2px;
-    margin-bottom: 10px;
-    font-size:36px;
-    text-align: center;
-}
-#introInfo{
-    width: 50%;
-    float:left;
-    margin-bottom: 30px;
-}
-#contactInfo{
-    text-align: right;
-    width: 50%;
-    float:left; 
-}
-a:link, a:visited{
-    text-decoration: none;
-    color:#3299CC;
-}
-a:hover{
-	border-bottom: 1px solid;
-}
-a:active{
-	color:#3299CC;
-	border-bottom: 1px solid;
-}
-/* Style the tab */
-div.tab {
-    overflow: hidden;
-    clear: both;
-}
-/* Style the buttons inside the tab */
-div.tab button {
-    cursor: pointer;
+.smtxt{
     font-size: 14px;
-    width:100px;
-    height:100px;
-    border-radius:50%;
-    text-align:center;
-    background:white;
-    margin-left: 180px;
-    padding-top: 0px;
-    float: left;
-    border: 1px solid black;
 }
-/* Change background color of buttons on hover */
-div.tab button:hover {
-    background-color: #3299CC;
-    color: white;
-    border: none;
+.myweb{
+    background-color:#ffb3ba;
+    border: 1px solid white;
 }
-/* Create an active/current tablink class */
-div.tab button.active {
-    background-color: #3299CC;
-    color: white;
-    border: none;
-}
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding-left: 30px;
-}
-img {
-    height: 70px;
-    width: 70px;
-    float: left;
-    padding-right: 20px;
-}
-.myList{
-    clear: both;
-    padding-top: 30px;
-}
-.myList > div{
-    padding-bottom: 4px;
-}
-#leftPanel{
-    width: 50%;
-    float: left;
-}
-#rightPanel{
-    width: 50%;
-    float: left;
-}
-
-.accordion-toggle {cursor: pointer;}
-.accordion-content {display: none;}
-.accordion-content.default {display: block;}
-
-button.accordion-toggle{
+.myweb:hover{
     background-color: white;
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    border:none;
-    font-size: 20px;
-    border-radius: 8px;
+    border: 1px solid #ffb3ba;
 }
-button.accordion-toggle:hover {
-    background-color: #3299CC;
-    color: white;
-    border-color: white;
+.mypy{
+    background-color:#ffdfba;
+    border: 1px solid white;
 }
-button.accordion-toggle.active {
-    background-color: #3299CC;
-    color: white;
-    border-color: white;
+.mypy:hover{
+    background-color: white;
+    border: 1px solid #ffdfba;
 }
-.accordion-content{
-    border: 1px solid #3299CC;
-    margin-top:15px;
+.myr{
+    background-color:#baffc9;
+    border: 1px solid white;
+}
+.myr:hover{
+    background-color: white;
+    border: 1px solid #baffc9;
+}
+.myother{
+    background-color:#bae1ff;
+    border: 1px solid white;
+}
+.myother:hover{
+    background-color: white;
+    border: 1px solid #bae1ff;
+}
+.myleft{
+    border-left: solid 2px #FC766AFF;
+}
+.myright{
+    border-right: solid 2px #5B84B1FF;
+}
+img{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
     margin-right: 10px;
-    padding: 10px 10px 10px 10px;
+}
+a.mylink:link, a.mylink:visited {
+    color:black;
+  }
+a.mylink:hover, a.mylink:active {
+    text-decoration: underline;
 }
