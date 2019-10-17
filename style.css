@@ -2,7 +2,7 @@
     font-weight: lighter;
 }
 .smtxt{
-    font-size: 14px;
+    font-size: 12px;
 }
 .myweb{
     background-color:#ffb3ba;
@@ -41,12 +41,6 @@
 }
 .myright{
     border-right: solid 2px #5B84B1FF;
-}
-img{
-    height: 20px;
-    width: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 a.mylink:link, a.mylink:visited {
     color:black;
