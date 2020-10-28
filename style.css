@@ -2,39 +2,14 @@
     font-weight: lighter;
 }
 .smtxt{
-    font-size: 16px;
+    font-size: 14px;
 }
-.myweb{
-    background-color:#ffb3ba;
-    border: 1px solid white;
+.mybox{
+    background-color:#f5f5f5;
+    border: 1px solid #e1e1dd;
 }
-.myweb:hover{
-    background-color: white;
-    border: 1px solid #ffb3ba;
-}
-.mypy{
-    background-color:#ffdfba;
-    border: 1px solid white;
-}
-.mypy:hover{
-    background-color: white;
-    border: 1px solid #ffdfba;
-}
-.myr{
-    background-color:#baffc9;
-    border: 1px solid white;
-}
-.myr:hover{
-    background-color: white;
-    border: 1px solid #baffc9;
-}
-.myother{
-    background-color:#bae1ff;
-    border: 1px solid white;
-}
-.myother:hover{
-    background-color: white;
-    border: 1px solid #bae1ff;
+.mybox:hover{
+    border: 1px solid black;
 }
 .myleft{
     border-left: solid 2px #FC766AFF;
