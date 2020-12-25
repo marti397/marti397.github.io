@@ -11,12 +11,6 @@
 .mybox:hover{
     border: 1px solid black;
 }
-.myleft{
-    border-left: solid 2px #FC766AFF;
-}
-.myright{
-    border-right: solid 2px #5B84B1FF;
-}
 a.mylink:link, a.mylink:visited {
     color:black;
   }
