@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CS171 - Midterm Project</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>MALARIA BY THE NUMBERS</h1>
+    <div id="main-navigation">
+        <a href="#key-facts-panel"><div class="circle">KEY FACTS</div></a>
+        <a href="#parasites-panel"><div class="circle">PARASITES</div></a>
+        <a href="#africa-panel"><div class="circle">AFRICA</div></a>
+        <a href="#to-do-panel"><div class="circle">TO DO</div></a>
+        <a href="#who-panel"><div class="circle">WHO</div></a>
+    </div>
+    <p id="moreInfoLink">For more information visit <a href="http://www.who.int/topics/malaria/en/" target="_blank">World Health Organization | Malaria</a></p>
+    <div id="key-facts-panel">
+        <h2>Malaria - Key Facts</h2>
+        <div class="row" id="panel-one">
+            <div class="col-md-6">
+                <ul>
+                    <li class="even">Malaria is <b>transmitted</b> to people through the bites of infected female mosquitoes.</li>
+                    <li class="odd"><b>Young children, pregnant women and non-immune travellers</b> are particularly vulnerable when they become infected.</li>
+                    <li class="even">Malaria is caused by the <b>Plasmodium parasite</b>.</li>
+                    <li class="odd">People infected often experience <b>fever, chills and ﬂu-like illness</b> at ﬁrst.</li>
+                    <li class="even"><b>Untreated</b>, the disease can lead to severe complications and, in some cases, <b>death</b>.</li>
+                    <li class="odd"><b>Malaria is preventable and curable</b></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="square-facts" id="fact-one-square"><b id="fact-one">3.2 billion people</b> – almost half of the world’s population – are at <b id="fact-one">risk of malaria</b>.</div>
+                <div class="square-facts" id="fact-two-square"><b id="fact-two">214 million malaria cases</b> reported worldwide in 2015.</div>
+                <div class="square-facts" id="fact-three-square"><b id="fact-three">37% global decrease</b> in malaria <b id="fact-three">incidence</b> between 2000 and 2015.</div>
+                <div class="square-facts" id="fact-four-square"><b id="fact-four">60% decrease</b> in global malaria <b id="fact-four">mortality</b> rates between 2000 and 2015.</div>
+            </div>
+        </div>
+    </div>
+    <div id="parasites-panel">
+        <h2>Malaria Parasites</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="root-text-malaria">Malaria in humans is caused by ﬁve species of parasites belonging to the genus <b>Plasmodium</b>.</div>
+                <div class="col-md-6">
+                    <div class="child-text-malaria">Four of these – P. falciparum, P. vivax, P. malariae and P. ovale – are human malaria species that are spread <b>from one person to another</b> via the bite of female mosquitoes of the genus Anopheles.</div>
+                    <div class="second-child-text-malaria"><b>P. falciparum</b> and <b>P. vivax</b> are the most prevalent, and <b>P. falciparum</b> is the most dangerous, with the highest rates of complications and mortality.</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="child-text-malaria">Information suggests that P. knowlesi malaria is not spread human-huan, but rather occurs in people when an Anopheles mosquito infected by a monkey then bites and infects humans (<b>zoonotic transmission</b>).</div>
+                    <div class="second-child-text-malaria">In recent years, human cases of malaria due to <b>P. knowlesi</b> have been recorded – this species causes malaria among monkeys.</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="tree-area"></div>
+            </div>
+        </div>
+    </div>
+    <div id="africa-panel">
+        <div class="row" id="panel-three">
+            <div class="col-md-6 africa-text">
+                <h2>Malaria Cases</h2>
+                <div><b>Most Malaria cases in 2015 are estimated to have occurred in the WHO African Region (88%)</b></div>
+            </div>
+            <div class="col-md-6 africa-text">
+                <h2>Malaria Deaths</h2>
+                <div><b>Most Malaria deaths in 2015 were in the WHO African Region (90%)</b></div>
+            </div>
+        </div>
+        <!-- Select box to choose the chart data-->
+        <div id="map-area">
+        <form class="form-inline">
+            <div class="form-group">
+                <select class="form-control" id="ranking-type">
+                    <option value="Malaria_cases">Malaria Cases</option>
+                    <option value="UN_population">UN Population</option>
+                    <option value="At_risk">Population at Risk</option>
+                    <option value="At_high_risk">Population at High Risk</option>
+                    <option value="Suspected_malaria_cases">Suspected Malaria Cases</option>
+                </select>
+            </div>
+		</form>
+        </div>
+    </div>
+    <div id="to-do-panel">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>What have we done?</h2>
+                <div>An increasing number of countries are moving towards <b>elimination of malaria</b>. Whereas only 13 countries were estimated to have fewer than 1000 malaria cases in 2000, 33 countries are estimated to have achieved this milestone in 2015.</div>
+                <div><b>Global ﬁnancing for malaria control increased</b> from an estimated US$ 960 million in 2005 to US$ 2.5 billion in 2014.</div>
+            </div>
+            <div class="col-md-6">
+                <h2>Where do we go?</h2>
+                <div>To address remaining challenges in global malaria control and elimination, WHO has developed the Global Technical Strategy for Malaria 2016-2030. Adopted by the World Health Assembly in May 2015, the strategy provides a technical framework for all endemic countries as they work towards malaria control and elimination. This Global Technical Strategy sets ambitious but achievable goals for 2030, including: reducing malaria case incidence by at least 90%; reducing malaria mortality rates by at least 90%; eliminating malaria in at least 35 countries; preventing a resurgence of malaria in all countries that are malaria-free. To achieve these targets, annual funding for malaria will need to triple over the next 15-year period, from US$ 2.7 billion (current level of spending) to US$ 8.7 billion by 2030.</div>
+            </div>
+        </div>
+    </div>
+    <div id="who-panel">
+        <h2>World Health Organization Recommendations</h2>
+        <div class="rec-text rec-one">Sleep under long-lasting insecticidal nets</div>
+        <div class="rec-text rec-two">Use protective clothing</div>
+        <div class="rec-text rec-three">Use insect repellents</div>
+        <div class="rec-text rec-four">Take preventive medication (chemoprophylaxis)</div>
+    </div>
+    
+	<!-- Load JS libraries -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/queue.min.js"></script>
+	<script src="js/topojson.js"></script>
+	<script src="js/d3.min.js"></script>
+    <script src="js/d3.tip.js"></script>
+
+	<!-- Choropleth and second visualization -->
+	<script src="js/vis-choropleth.js"></script>
+	<script src="js/vis-second.js"></script>
+	
+</body>
+</html>
