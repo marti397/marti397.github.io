@@ -1,9 +1,12 @@
 .myfont{
-    font-weight: lighter;
+    font-weight: 300;
 }
 a.mylink:link, a.mylink:visited {
     color:black;
   }
 a.mylink:hover, a.mylink:active {
     text-decoration: underline;
+}
+.mybackground{
+    background-color:	#F5F5F5;
 }
