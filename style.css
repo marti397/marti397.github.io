@@ -1,16 +1,6 @@
 .myfont{
     font-weight: lighter;
 }
-.smtxt{
-    font-size: 16px;
-}
-.mybox{
-    background-color:#f5f5f5;
-    border: 1px solid #e1e1dd;
-}
-.mybox:hover{
-    border: 1px solid black;
-}
 a.mylink:link, a.mylink:visited {
     color:black;
   }
