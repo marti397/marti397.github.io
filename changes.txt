@@ -1,0 +1,4 @@
+-intro
+<div style="font-size:2.5vw;">Hello friend! I am Chris and I am a full-time Account Risk Engineer working at AIG. I also do full-stack dev, data science, and cloud engineering.
+                        Born in Mexico City in 1992. Currently residing in Georgia, USA.</div>
+-CV
